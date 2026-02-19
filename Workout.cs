@@ -22,6 +22,10 @@ namespace COMP003A.Assignment6
             Console.WriteLine($"Exercise Name: {Name}, Reps: {Reps}, Using Weights: {Weighted}");
         }
 
+        public void MoreReps( int reps )
+        {
+            Reps += reps;
 
+        }
     }
 }
