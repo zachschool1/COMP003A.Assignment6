@@ -17,14 +17,22 @@ namespace COMP003A.Assignment6
             Weighted = false;
         }
 
-        public void DisplayInfo()
+        public string DisplayInfo()
         {
-            Console.WriteLine($"Exercise Name: {Name}, Reps: {Reps}, Using Weights: {Weighted}");
+            if (Name != null)
+            {
+                return $"Exercise Name: {Name}, Reps: {Reps}, Using Weights: {Weighted}";
+            }
+            return "no name given";
         }
 
-        public void MoreReps( int reps )
+        public void MoreReps( string name,int reps )
         {
-            Reps += reps;
+            if (name == Name)
+            {
+                this.Reps += reps;
+            }
+            
 
         }
     }
