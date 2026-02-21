@@ -23,7 +23,7 @@
                     case "1":
                         Console.WriteLine("Display info");
                         
-                        Console.Write(set1.DisplayInfo());
+                        Console.WriteLine(set1.DisplayInfo());
                         break;
                     case "2":
                         Console.WriteLine("Which execise are you updating?");
