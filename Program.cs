@@ -35,7 +35,7 @@
                         
                         set1.MoreReps(exersizeName, reps);
                         string info = set1.DisplayInfo();
-                        Console.WriteLine($"Updated input{info}");
+                        Console.WriteLine($"Updated info: \n{info}");
 
                         break;
                     case "3":
