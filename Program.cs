@@ -12,18 +12,18 @@
                 Console.WriteLine("Pick an option: ");
                 Console.WriteLine("1. Display Information");
                 Console.WriteLine("2. Add Reps");
+                //i would add another option to add a new workout, or add it to the add reps function but i dont want to do that at the moment.
                 Console.WriteLine("3. Exit Program");
 
                 string input = Console.ReadLine();
-                Console.WriteLine($"Your input is {input}");
 
-
+               
                 switch (input)
                 {
                     case "1":
                         Console.WriteLine("Display info");
                         
-                        set1.DisplayInfo();
+                        Console.Write(set1.DisplayInfo());
                         break;
                     case "2":
                         Console.WriteLine("Which execise are you updating?");
@@ -39,7 +39,7 @@
 
                         break;
                     case "3":
-                        Console.WriteLine("case 3");
+                        Console.WriteLine("Exiting Program");
                         running = false;
                         break;
                     case "secret":
@@ -55,12 +55,6 @@
 
 
             
-
-            set1.MoreReps(30);
-
-            set1.DisplayInfo();
-
-
         }
     }
 }
